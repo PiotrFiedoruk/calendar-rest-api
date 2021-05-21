@@ -2,7 +2,7 @@
 Backend Django Rest API I was asked to create for a job interview in one of the software houses
 
 
-##Background
+## Background
 
 Create a simple RESTful API for managing calendar events and
 conference room availability. The application would be deployed in a multitenant model,
@@ -10,7 +10,7 @@ where multiple companies would store their data on a central server.
 For simplicity, please assume that the user model contains an additional UUID field -
 company_id. Users sharing the same company_id will belong to the same company.
 
-##Business requirements
+## Business requirements
 
 Each user should have his/her default timezone. All endpoints should be timezone-aware and
 return results in the timezone of the currently logged in user.
@@ -34,7 +34,7 @@ Calendar event (meeting):
 6. Participant list (platform users, input provided by their e-mail addresses)
 7. Location (optional)
 
-####On top of the basic create/retrieve operations, the API should also allow clients to:
+#### On top of the basic create/retrieve operations, the API should also allow clients to:
 - retrieve events happening on a specific day (?day=2020-12-12)
 
 - retrieve events happening in a specific conference room (?location_id=6fb94459)
